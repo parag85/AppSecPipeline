@@ -13,7 +13,7 @@ pipeline
                 sh 'git clone https://github.com/parag85/WebGoat.git'
                 //sh 'cd WebGoat/'
                 //sh 'ls'
-                //sh 'pwd'
+                sh 'whoami'
             }
         }
             
