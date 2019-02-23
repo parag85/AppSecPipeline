@@ -20,7 +20,7 @@ pipeline
         stage('Git-secrets') {
             steps {
                 echo 'This script is identifying the Git secrets'  
-		sh 'sudo trufflehog --entropy false --regex WebGoat'
+		sh 'sudo -i trufflehog --entropy false --regex WebGoat'
                 }
             }
 	  
