@@ -8,12 +8,13 @@ pipeline
     stages {
         stage('Checkout') {
             steps {
-                echo 'This script is cloning the repo.'  
-                sh 'rm -rf WebGoat'
-                sh 'git clone https://github.com/parag85/WebGoat.git'
+                sh 'dir'
+		 //echo 'This script is cloning the repo.'  
+                //sh 'rm -rf WebGoat'
+                //sh 'git clone https://github.com/parag85/WebGoat.git'
                 //sh 'cd WebGoat/'
                 //sh 'ls'
-                sh 'whoami'
+                //sh 'whoami'
             }
         }
             
