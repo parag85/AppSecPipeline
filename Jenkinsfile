@@ -10,9 +10,9 @@ pipeline
             steps {
                 //sh 'dir'
 		echo 'This script is cloning the repo.'  
-                //sh 'rm -rf WebGoat'
-                //sh 'git clone https://github.com/parag85/WebGoat.git'
-                //sh 'cd WebGoat/'
+                //sh 'rm -rf pivaadescsec'
+                //sh 'git clone https://github.com/parag85/pivaadescsec.git'
+                //sh 'cd pivaadescsec/'
                 //sh 'ls'
                 //sh 'whoami'
             }
