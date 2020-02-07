@@ -8,11 +8,11 @@ pipeline
     stages {
         stage('Checkout') {
             steps {
-                //sh 'dir'
+                sh 'dir'
 		echo 'This script is cloning the repo.'  
-                //sh 'rm -rf pivaadescsec'
-                //sh 'git clone https://github.com/parag85/pivaadescsec.git'
-                //sh 'cd pivaadescsec/'
+                sh 'rm -rf pivaadescsec'
+                sh 'git clone https://github.com/parag85/pivaadescsec.git'
+                sh 'cd pivaadescsec/'
                 //sh 'ls'
                 //sh 'whoami'
             }
@@ -21,7 +21,7 @@ pipeline
         stage('Git-secrets') {
             steps {
                 echo 'This script is identifying the Git secrets'  		
-		//sh 'sudo trufflehog --entropy false --regex WebGoat'
+		sh 'sudo trufflehog --entropy false --regex pivaadescsec'
                 }
             }
 	  
