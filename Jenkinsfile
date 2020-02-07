@@ -1,6 +1,6 @@
 pipeline 
 {
-    agent jenkins_slave
+    agent any
     options 
 	{
         skipDefaultCheckout(true)  // To Avoid Default Checkout 
