@@ -14,7 +14,7 @@ pipeline
                 //sh 'git clone https://github.com/parag85/pivaadescsec.git'
                 //sh 'cd pivaadescsec/'
                 //sh 'ls'
-                sh 'whoami'
+                //sh 'whoami'
             }
         }
             
