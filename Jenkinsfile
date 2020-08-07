@@ -25,7 +25,7 @@ pipeline
                 }
             }
 	  
-        stage('OAST') {
+        stage('SCA') {
             steps {
               echo 'This script is identifying the OAST vulnerabilities'
             }
