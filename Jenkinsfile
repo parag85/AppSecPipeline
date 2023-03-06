@@ -21,8 +21,8 @@ pipeline
         stage('Git-secrets') {
             steps {
                 echo 'This script is identifying the Git secrets'  		
-		sh 'docker pull trufflesecurity/trufflehog'
-		sh 'docker run -t trufflesecurity/trufflehog --json https://github.com/testappkgs/vulnado.git > trufflehog'
+		sh 'sudo docker pull trufflesecurity/trufflehog'
+		sh 'sudo docker run -t trufflesecurity/trufflehog --json https://github.com/testappkgs/vulnado.git > trufflehog'
                 }
             }
 	  
