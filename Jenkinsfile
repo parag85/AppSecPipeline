@@ -35,7 +35,7 @@ pipeline
               sh 'wget "https://raw.githubusercontent.com/parag85/AppSecPipeline/master/owasp-dependency-check.sh"'
               sh 'chmod +X owasp-dependency-check.sh'
               sh 'bash owasp-dependency-check.sh'
-	      sh 'cat /var/lib/jenkins/workspace/DevSecOps_Pipeline/reports/dependency-check-report.xml'
+	      sh 'cat /var/lib/jenkins/workspace/DevSecOps_Pipeline/report/dependency-check-report.xml'
             }
         }
         
