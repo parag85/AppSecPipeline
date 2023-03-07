@@ -31,6 +31,10 @@ pipeline
         stage('SCA') {
             steps {
               echo 'This script is identifying the OAST vulnerabilities'
+	      sh 'rm owasp* || true'
+              sh 'https://raw.githubusercontent.com/parag85/AppSecPipeline/master/owasp-dependency-check.sh'
+              sh 'chmod +x owasp-dependency-check.sh'
+              sh 'bash owasp-dependency-check.sh'
             }
         }
         
