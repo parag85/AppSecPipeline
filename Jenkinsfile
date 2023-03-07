@@ -22,7 +22,7 @@ pipeline
             steps {
                 echo 'This script is identifying the Git secrets'  		
 		sh 'docker pull gesellix/trufflehog'
-		sh 'docker pull gesellix/trufflehog --json https://github.com/testappkgs/vulnado.git > trufflehog'
+		sh 'docker run -t gesellix/trufflehog --json https://github.com/testappkgs/vulnado.git > trufflehog'
                 }
             }
 	  
